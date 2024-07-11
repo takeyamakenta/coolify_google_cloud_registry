@@ -22,4 +22,4 @@ HELPER_IMAGE=REGION.pkg.dev/PROJECT-ID/path/to/registory:tag
 re-install coolify
 
 ### step6
-deploy on coolify
+deploy your app on coolify
