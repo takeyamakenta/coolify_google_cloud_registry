@@ -1,4 +1,4 @@
-## coolify deploy from google artifact registory
+## Coolify deploy from Google Artifact Registory
 ### step1
 Create service account and download service account key json file.
 Then put the json file onto this project folder and rename it to CRED-FILE-NAME.
