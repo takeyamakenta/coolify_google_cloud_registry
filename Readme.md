@@ -1,25 +1,27 @@
 ## coolify deploy from google artifact registory
 ### step1
-create service account and download service account key json file
-put the json file into onto this project folder and rename it to CRED-FILE-NAME
+Create service account and download service account key json file.
+Then put the json file into onto this project folder and rename it to CRED-FILE-NAME.
 refer to 
 [link](https://medium.com/@sbkapelner/building-and-pushing-to-artifact-registry-with-github-actions-7027b3e443c1)
 
 ### step2
 substitute variables on Dockerfile and Makefile for your configuration.
-on this folder execute
+Execute
 `make deploy`
+on this project.
 
 ### step3
-on the machine where coolify is installed, install gcloud-cli and configure authentication setting.
+Install gcloud-cli and configure authentication setting on the machine where coolify is installed
 
 ### step4 
-on the machine where coolify is installed, edit /data/coolify/source/.env and add 
-HELPER_IMAGE=REGION.pkg.dev/PROJECT-ID/path/to/registory:tag
+Edit /data/coolify/source/.env and add a line
+`HELPER_IMAGE=REGION.pkg.dev/PROJECT-ID/path/to/registory:tag`
 (where customized helper image pushed)
+on the machine where coolify is installed.
 
 ### step5
-re-install coolify
+Re-install coolify
 
 ### step6
-deploy your app on coolify
+Deploy your app on coolify
